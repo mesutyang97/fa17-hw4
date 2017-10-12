@@ -1,0 +1,8 @@
+<h1>Creating Todo List</h1>
+<%= form_for @todo , url: "/todos/create" do |todo| %>
+	<%= todo.label :tasks %>:
+	<%= todo.text_field :tasks %><br />
+	<%= todo.label :finished %>:
+	<%= todo.check_box :finished %> <br />
+	<%= todo.submit %>
+<% end %>
